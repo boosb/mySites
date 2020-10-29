@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+.container {
+    max-width: 1780px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.body-in-wrapper{
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    //overflow:hidden;
+    overflow-x: hidden;
+    position: relative;
+    color:#fff;
+    @extend %roboto-regular;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.page-fon-1, .page-fon-2, .page-fon-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-fon-1{
+    background-image: url('../images/fon-1.jpg');
+    background-position: bottom center;
+}
+
+.page-fon-2{
+    background-image: url('../images/fon-2.jpg');
+    background-position: center;
+}
+
+.page-fon-3{
+    background-image: url('../images/fon-3.jpg');
+    background-position: center;
+}
+
+.title{
+    &__main{
+    text-transform: uppercase;
+    @extend %russo-one;
+    font-size: 36px;
+    line-height: 46px;
+    color: #8DC63F;
+    }
+    &__sub{
+        @extend %roboto-bold;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.button {
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    background-color: #51dc64;
+    padding: 20px 60px 15px 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    @extend %roboto-medium;
+    line-height: 23px;
+    
+    &:hover,
+    &:active{
+        box-shadow:0 0 30px #51dc64;
+    }
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline:none;
+  }

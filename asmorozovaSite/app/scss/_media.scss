@@ -1,0 +1,365 @@
+@media (max-width: 1750px) {
+    .menu{
+        max-height: 45px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .menu__list-item{
+        padding-top: 8px;
+    }
+    .menu__btn{
+        max-width: 180px;
+        font-size: 18px;
+        line-height: 22px;
+        top: 10px;
+    }
+    .descr-page__photo img{
+        width: 650px;
+    }
+    .descr-page__body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .descr-page__main-text{
+        margin-top: 20px;
+    }
+    .experience-page__gallery,
+    .experience-page__img-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .consultation-page__items{
+        justify-content: center;
+    }
+    .consultation-page__item,
+    .consultation-page__item.special{
+        margin-left: 70px;
+    }
+    .review-page__text{
+        max-width: 880px;
+    }
+    .diploma-page__row-one,
+    .diploma-page__row-two{
+        flex-wrap: wrap;
+        //align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1275px){
+    .menu{
+        background-color: transparent;
+    }
+    .menu__list{
+        display: none;
+    }
+    .menu__phone-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #231A14;
+        background-color: #F17C5C;
+        cursor: pointer;
+        margin-top: 20px; 
+        position: fixed;
+        z-index: 10px;
+        right: 20px;
+    }
+    .menu__phone-btn div{
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        margin: 5px 0
+    }
+    .menu__btn{
+        display: none;
+    }
+    .main__btn-phone{
+        display: block;
+        position: fixed;
+        z-index: 10;
+        bottom:0;
+        left:0;
+        right: 0;
+        background-color: #F17C5C;
+        color: #231A14;
+        height: 50px;
+        text-transform: uppercase;
+        border-radius: 15px 15px 0 0;
+        cursor: pointer;
+    }
+    .main__btn-phone-link{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    .header-page__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 65px;
+    }
+    .header-page__name,
+    .header-page__copy,
+    .header-page__social-list,
+    .header-page__phone{
+        margin-left: 0;
+    }
+    .consultation-page__item,
+    .consultation-page__item.special{
+        margin-left: 0;
+    }
+    .review-page__items{
+        display: flex;
+        align-items: center;
+    }
+    .review-page__text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .slider-btn{
+        &__left{
+            position: inherit;
+            left: 0;
+        }
+        &__right{
+            position: inherit;
+            right: 0;
+        }
+    
+    }
+    .experience-page__gallery{
+        padding-left: 0;
+    }
+    .experience-page__img-wrapper{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .descr-page__photo img{
+        width: 100%;
+    }
+    .title,
+    .title-two{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .descr-page__main-text{
+        padding-left: 0;
+    }
+    .descr-page__text-box{
+        padding-left: 35px;
+    }
+    .consultation-page__text{
+        text-align: center;
+    }
+    .consultation-page__text-link-one,
+    .consultation-page__text-link-two,
+    .consultation-page__text-link-three{
+        text-align: left;
+    }
+    .review-page__name{
+        text-align: center;
+    }
+    .contacts-page__subtitle{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .contacts-page__phone-box,
+    .contacts-page__email-box,
+    .contacts-page__form-text,
+    .contacts-page__form-input,
+    .contacts-page__form-textarea{
+       font-size: 18px;
+       line-height: 24px;
+    }
+    .contacts-page__box{
+        flex-direction: column;
+        position: relative;
+    }
+    .contacts-page__social-list{
+        position: absolute;
+        bottom: -58px;
+    }
+    .contacts-page__social-list li{
+        display: inline-block;
+    }
+    .contacts-page__social-item{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .form-in-footer{
+        position: relative;
+    }
+    .contacts-page__wrapper {
+        padding-left: 0;
+    }
+    .main-btn-two.on-phone{
+        position: absolute;
+        bottom: -75px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    .contacts-page__social-list{
+        position: absolute;
+        bottom: -180px;
+        margin-left: 0;
+    }
+    .litebox__form-line{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .litebox__form-input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .litebox__form-textarea{
+        min-height: 130px;
+    }
+    .main-btn.special{
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    .litebox__form{
+        padding-bottom: 70px;
+    }
+    .phone-menu{
+        top: -800px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-page__name{
+        margin-bottom: 85px;
+        font-size: 65px;
+        line-height: 80px;
+        max-width: 400px;
+    }
+    .header-page__descr,
+    .header-page__phone{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .header-page__social-list{
+        margin-bottom: 20px;
+    }
+    .header-page__copy{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacts-page__subtitle{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .contacts-page__phone-box,
+    .contacts-page__email-box,
+    .contacts-page__form-text,
+    .contacts-page__form-input,
+    .contacts-page__form-textarea{
+       font-size: 15px;
+       line-height: 19px;
+    }
+    .contacts-page__form-line{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .contacts-page__form-line input{
+        margin-bottom: 10px;
+    }
+    .contacts-page__form-input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .experience-page__gallery img{
+        width: 100%;
+    }
+    .experience-page__img-wrapper iframe{
+        width: 100%;
+    }
+    .consultation-page__img.spec img{
+        width: 100%;
+    }
+    .phone-menu{
+        top: -700px;
+    }
+    .consultation-page__price-box {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .consultation-page__img img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .title,
+    .title-two{
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .header-page__name{
+        font-size: 45px;
+        line-height: 55px;
+        max-width: 280px;
+        margin-bottom: 40px;
+    }
+    .header-page__descr,
+    .header-page__phone{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .header-page__social-list{
+        margin-bottom: 20px;
+    }
+    .header-page__copy{
+        margin-bottom: 40px;
+    }
+    .menu__phone-btn{
+        width: 45px;
+        height: 45px;
+    }
+    .menu__phone-btn div{
+        width: 26px;
+        margin: 4px 0;
+    }
+    .diploma-page__row-two img {
+        width: 100%;
+    }
+    .experience-page__img-wrapper iframe{
+        width: 100%;
+    }
+    .review-page__wrap iframe{
+        width: 100%;
+    }
+    .phone-menu__close-btn{
+        width: 45px;
+        height: 45px;
+        &::before,
+        &::after{
+            width: 60px;
+        }
+    }
+    .consultation-page__price-box {
+        margin-left: 10px;
+    }
+}
