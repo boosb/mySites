@@ -3,7 +3,7 @@ $(function () {
         arrows: false,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3500,
         dots: true
     });
 
@@ -53,6 +53,7 @@ const shot1 = document.querySelector('.page-two__shot-1'),
     shot8 = document.querySelector('.page-two__shot-8'),
     shot9 = document.querySelector('.page-two__shot-9'),
     shot10 = document.querySelector('.page-two__shot-10'),
+    shotMain = document.querySelector('.page-two__shot-main'),
     continMain = document.querySelector('.page-ten__continuation'),
     continText = document.querySelector('.page-ten__continuation-text'),
     contin = document.querySelector('.page-ten__continuation-blue'),
@@ -60,9 +61,13 @@ const shot1 = document.querySelector('.page-two__shot-1'),
     plus = document.querySelector('.page-twelve__inner-plus'),
     val = document.querySelector('.page-twelve__inner-numeral'),
     finalSum = document.querySelector('.page-twelve__inner-number'),
+    mainBox = document.querySelector('.page-two__main-box'),
     mainLink = document.querySelector('.main-link');
 
 window.addEventListener('scroll', function () {
+    function addedActive() {
+        mainBox.classList.add("active");
+    }
     //console.log(pageYOffset)
     if (pageYOffset >= 250) {
         shot1.classList.add("active");
@@ -75,6 +80,8 @@ window.addEventListener('scroll', function () {
         shot8.classList.add("active");
         shot9.classList.add("active");
         shot10.classList.add("active");
+        shotMain.classList.add("active");
+        setTimeout(addedActive, 6000);
     }
 });
 

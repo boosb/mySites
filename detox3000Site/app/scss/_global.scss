@@ -87,15 +87,17 @@ body {
     border: none;
     border-radius: 15px;
     background-color: #51dc64;
-    padding: 20px 60px 15px 60px;
+    //padding: 20px 60px 15px 60px;
+    padding: 28px 80px 28px 80px;
     text-transform: uppercase;
     cursor: pointer;
     @extend %roboto-medium;
-    line-height: 23px;
-    
+    font-size: 25px;
+    line-height: 28px;
+    box-shadow:0 0 30px #51dc64;
     &:hover,
     &:active{
-        box-shadow:0 0 30px #51dc64;
+        box-shadow:none;
     }
 }
 

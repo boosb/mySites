@@ -176,6 +176,9 @@
     .page-five__wrapper{
         margin-top: 10px;
     }
+    .page-six{
+        padding-bottom: 30px;
+    }
     .page-seven__title{
         padding-top:100px;
         margin-bottom: 20px;
@@ -186,11 +189,15 @@
     .page-seven__img.special{
         padding-right: 35px;
     }
+    /*
     .page-seven__box {
         width: 325px;
-    }    
+    }   */ 
     .page-eight__girl img {
         max-width: 180px;
+    }
+    .page-eight__btn {
+        bottom: -70px;
     }
 }
 
@@ -207,14 +214,14 @@
     .page-seven__item{
         margin-bottom: 35px;
     }
-    .page-seven__btn{
+   /* .page-seven__btn{
         position: absolute;
         padding-left: 0;
         bottom: -70px;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
-    }
+    }*/
     .page-ten__main-wrapper{
         flex-wrap: wrap;
         & ul{
@@ -261,6 +268,9 @@
     }
     .header__info{
         display: block;
+    }
+    .page-two__shot-main{
+        margin-left: 15px;
     }
     .page-three__title{
         padding-left: 0;
@@ -610,13 +620,16 @@
         margin-bottom: 160px;
     }
     .page-five__text{
-        max-width: 480px;
+        //max-width: 480px;
         margin-top: 0;
         margin-left: 0;
         top: 29%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
+    }
+    .page-five__special-link{
+        text-decoration: underline;
     }
     .page-five__btn{
         margin-top: 0;
@@ -637,7 +650,11 @@
     .title__sub.page-eight__title-box__sub{
         margin-left: 0;
         padding-left: 0;
-    }
+    }/*
+    .page-seven__text{
+        font-size: 15px;
+        line-height: 18px;
+    }*/
     .page-eight__motiv{
         margin-left: -55px;
     }
@@ -645,7 +662,7 @@
         margin-right: 75px;
     }
     .page-nine{
-        padding-bottom: 140px;
+        padding-bottom: 60px;
     }
     .page-nine__main-wrapper{
         flex-wrap: wrap;
@@ -655,6 +672,19 @@
         & ul:last-child{
             margin-left: 30px;
         }
+    }
+    .page-nine__btn {
+        float: none;
+        text-align: center;
+    }
+    .page-ten__title-box {
+        margin-bottom: 30px;
+    }
+    .page-ten__text-question-title,
+    .page-ten__video-question-title{
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 15px;
     }
     .button{
         box-shadow:0 0 30px #51dc64;
@@ -685,6 +715,11 @@
     }
     .copy__text-phone{
         display: block;
+    }
+    .button {
+        padding: 20px 35px 20px 35px;
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 
@@ -743,7 +778,14 @@
         max-width: 100%;
     }
     .page-seven{
-        padding-bottom: 70px;
+        padding-bottom: 30px;
+    }
+    .page-eight__btn {
+        position: static;
+        text-align: center;
+    }
+    .page-ten__sub-title{
+        max-width: 300px;
     }
 }
 
@@ -914,9 +956,9 @@
     .page-four__phone-box-text{
         margin-top: 20px;
     }
-    .page-five__text{
+    /*.page-five__text{
         max-width: 95%;
-    }
+    }*/
     .page-five__detox-wrap{
         margin-bottom: 15px;
         & img{
@@ -928,6 +970,12 @@
     }
     .page-five__box-2{
         margin-left: 0;
+    }
+    .page-seven__text.special{
+        display: block;
+    }
+    .page-seven__text{
+        display: none;
     }
     .page-ten__video-slider {
         width: 400px;
@@ -956,6 +1004,13 @@
 }
 
 @media (max-width: 500px) {
+    .page-two__shot-main {
+        margin-left: 0;
+        top: 278px;
+        font-size: 53px;
+        line-height: 70px;
+        -webkit-text-stroke-width: 2px;
+    }
     .page-three__box__picture {
         max-width: 170px;
     }
@@ -1098,17 +1153,25 @@
     .page-three__box {
         left: 1%;
     }
+    /*
     .button {
-        padding: 10px 15px 7px 15px;
-        font-size: 14px;
+        padding: 20px 35px 20px 35px;
+        font-size: 18px;
         line-height: 20px;
     }
+    */
+    .page-seven__box {
+        max-width: 395px; 
+    }
     .page-seven__btn{
-        max-width: 265px;
+        max-width: 100%;
     }
     .page-nine__btn-text {
         font-size: 20px;
         line-height: 24px;
+    }
+    .title__sub.page-ten__sub-title {
+        margin-left: 35%;
     }
     .page-ten__video-slider {
         width: 300px;
@@ -1124,7 +1187,7 @@
     }
     .page-eleven__btn,
     .page-thirteen__btn {
-        bottom: -45px;
+        bottom: -60px;
     }
     .page-twelve__inner{
         margin-bottom: 20px;
@@ -1188,15 +1251,19 @@
     .page-six__item-two__box{
         justify-content: center;
     }
+    .page-seven__box {
+        width: 325px;
+    }
     .page-eight__main-box{
         padding-left: 15px;
     }
+    /*
     .page-ten__text-question-title,
     .page-ten__video-question-title{
         font-size: 28px;
         line-height: 34px;
         margin-bottom: 15px;
-    }
+    }*/
 }
 
 @media (max-width: 375px) {

@@ -218,6 +218,20 @@
 
 
 .page-two{
+    &__main-box{
+        position: absolute;
+        left: -100px;
+        right: -100px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all .5s;
+        &.active{
+            background-color: #000;
+            opacity: 0.5;
+        }
+    }
     &__wrapper{
         position: relative;
         padding-top: 100px;
@@ -226,6 +240,7 @@
         line-height: 42px;
         text-transform: uppercase;
         height: 100vh;
+        
     }
     &__shot-1{
         position: relative;
@@ -331,6 +346,25 @@
         transition: all 1s linear 4.5s;
         &.active{
             left:0;
+        }
+    }
+    &__shot-main{
+        @extend %russo-one;
+        position: absolute;
+        margin-left: 32%;
+        top: 430px;
+        left: -100%;
+        font-size: 144px;
+        line-height: 174px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.43);
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #fff;
+        max-width: 800px;
+        transition: all 1s linear 5s;
+        &.active{
+            left: 0;
         }
     }
 }
@@ -624,6 +658,7 @@
         border: none;
         border-radius: 15px;
         margin-top: -20px;
+        font-size: 15px;
     }
     &__lebel-1{
         margin-top: 30px;
@@ -635,7 +670,7 @@
         margin-right: 50px;
     }
     &__box-2{
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 50px;
     }
     &__list{
@@ -658,6 +693,12 @@
         font-size: 15px;
         line-height: 18px;
         margin-top: 10px;
+    }
+    &__special-link{
+        //color: #1689F2;
+        &:hover{
+            text-decoration: underline;
+        }
     }
     &__btn{
         float: right;
@@ -759,7 +800,16 @@
     &__btn{
         margin-top: 60px;
     }
-
+    &__img-1,
+    &__item-two__img{
+        position: relative;
+        ::before{
+            content: url('../images/magnifier1.png');
+            position: absolute;
+            bottom: -18px;
+            right: -18px;
+        }
+    }
 
     &__img-one{
         max-width: 80px;
@@ -808,10 +858,13 @@
             padding-left: 70px;
         }
     }
+    &__text.special{
+        display: none;
+    }
     &__heading-1, &__heading-2{
         @extend %roboto-bold;
         font-size: 23px;
-        line-height: 32px;
+        line-height: 27px;
     }
     &__heading-1{
         color: #A4DCE9;
@@ -824,10 +877,10 @@
         &.page-seven__bold{
             @extend %roboto-bold;
         }
-    }
+    }/*
     &__btn {
         padding-left: 42%;
-    }
+    }*/
 }
 
 .page-eight{
@@ -963,7 +1016,10 @@
 
     }
     &__btn{
-        float: right;
+        //float: right;
+        position: absolute;
+        bottom: 40px;
+        right: 200px;
     }
 }
 
@@ -1106,7 +1162,7 @@
         margin-bottom: 60px;
     }
     &__text{
-        max-width: 660px;
+        max-width: 630px;
         position: absolute;
         left: 50%;
         margin-right: -50%;
@@ -1135,6 +1191,12 @@
             min-height: 200px;
             outline:none;
         }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
     }
     &__btn{ 
         position: absolute;
