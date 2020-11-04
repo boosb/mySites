@@ -245,6 +245,7 @@
     &__shot-1{
         position: relative;
         right: -100%;
+        top: 100px;
         color: #E97761;
         transition: all 1s;
         &.active{
